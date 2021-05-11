@@ -1,12 +1,12 @@
-#multiply all the elements in the list
+# multiply all the elements in the list
 
-
-total=1
+total = 1
 # creating a list
-list1 = [8, 2, 3, -1, 7]
+list_1 = [8, 2, 3, -1, 7]
 
-for i in range(0,len(list1)):
-    total=total*list1[i]
+# Iterating for all the list indices
+for item in list_1:
+    if item.__class__.__name__ in ["int", "float"]:
+        total = total * item
 
-
-print(total)
+print(f"The multiplication of list_1 elements is equal to: {total}")

@@ -2,7 +2,7 @@
 
 def maximum(a: int, b: int, c: int) -> int:
     if (a >= b) and (a >= c):
-        return a  # TODO: Do not use python inbuilt-keywords
+        return a
 
     elif (b >= a) and (b >= c):
         return b

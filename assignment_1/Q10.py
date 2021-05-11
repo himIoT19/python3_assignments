@@ -1,10 +1,13 @@
-#even numbers from a list
+# Program to find even numbers from a list of numbers
 
-list1=[1, 2, 3, 4, 5, 6, 7, 8, 9]
-F=[]
-for i in range(len(list1)):
-    if(list1[i]%2==0):
-        F.append(list1[i])
+list_1 = [1, 2, -24, -31, 3, 4, 5, 6, 7, 8, 9, 343, 66, 222, 0]
+print(f"List before sorting even numbers: {list_1}")
 
+even_list = []
 
-print(F)        
+# Iterate all list elements
+for num in list_1:
+    if num % 2 == 0:
+        even_list.append(num)
+
+print(f"List after sorting even numbers: {even_list}")

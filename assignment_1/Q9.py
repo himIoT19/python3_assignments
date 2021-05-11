@@ -1,18 +1,26 @@
-#check prime or not
-def prime(n):
-    if n > 1:
+# Program to check the number is prime or not
 
+def prime(num):
+    """
+    Function used to check the number is prime or not
+    :param num: int
+    :return: none
+    """
+    if num > 1:
+        is_prime = True
+        for i in range(2, int(num / 2) + 1):
 
-        for i in range(2, int(n / 2) + 1):
-
-
-            if (n % i) == 0:
-                print(n, "is not a prime number")
+            if (num % i) == 0:
+                is_prime = False
                 break
+        if is_prime:
+            print(f"The {num} is prime number.")
         else:
-            print(n, "is a prime number")
+            print(f"The {num} is not prime number.")
 
     else:
-        print(n, "is not a prime number")
+        print(num, "is not a prime number")
 
-prime(4)
+
+# Function call
+prime(373)
